@@ -2,48 +2,171 @@
 
   <meta charset="UTF-8">
   <title>GitHub Status - Incident History</title>
-  <style id="INLINE_PEN_STYLESHEET_ID">
+  <style>
     body {
-  background-color: rgb(13, 17, 23);
-  color: rgb(230, 237, 243);
-}
-
-.dayName {;
-  bottom: -3px;
-}
-.day {
-  width: 10px;
-  border-radius: 2px;
-  border-spacing: 3px;
-}
-
-.count-0 {
-  background-color: rgb(22, 27, 34);
-}
-.count-1 {
-  background-color: rgb(14, 68, 41);
-}
-.count-2 {
-  background-color: rgb(0, 109, 50);
-}
-.count-3 {
-  background-color: rgb(38, 166, 65);
-}
-.count-4,
-.count-5,
-.count-6,
-.count-7,
-.count-8,
-.count-9 {
-  background-color: rgb(57, 211, 83);
-}
+      background-color: rgb(13, 17, 23);
+      color: rgb(230, 237, 243);
+    }
+    
+    .month {
+      max-width: 0;
+    }
+    
+    .dayName {
+      bottom: -3px;
+      height: 19px;
+      font-size: 12px;
+    }
+    .day {
+      width: 10px;
+      border-radius: 2px;
+      border-spacing: 3px;
+    }
+    
+    .count-0 {
+      background-color: rgb(22, 27, 34);
+    }
+    .count-1 {
+      background-color: rgb(14, 68, 41);
+    }
+    .count-2 {
+      background-color: rgb(0, 109, 50);
+    }
+    .count-3 {
+      background-color: rgb(38, 166, 65);
+    }
+    .count-4,
+    .count-5,
+    .count-6,
+    .count-7,
+    .count-8,
+    .count-9 {
+      background-color: rgb(57, 211, 83);
+    }
 
   </style>
 </head>
 
 <body>
   <h1><a href="https://www.githubstatus.com/">GitHub Status</a> - Incident History</h1>
-  <div id="app" data-v-app=""><table><tbody><tr><td class="dayName">Sun</td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-1"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td></tr><tr><td class="dayName">Mon</td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-1"></td><td class="day count-2"></td><td class="day count-0"></td><td class="day count-2"></td><td class="day count-2"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-1"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-1"></td><td class="day count-1"></td><td class="day count-0"></td><td class="day count-1"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td></tr><tr><td class="dayName">Tue</td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-1"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-2"></td><td class="day count-1"></td><td class="day count-1"></td><td class="day count-3"></td><td class="day count-1"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-1"></td><td class="day count-1"></td></tr><tr><td class="dayName">Wed</td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-1"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-1"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-1"></td><td class="day count-1"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-1"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-2"></td><td class="day count-1"></td><td class="day count-1"></td><td class="day count-0"></td><td class="day count-1"></td></tr><tr><td class="dayName">Thu</td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-1"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-1"></td><td class="day count-1"></td><td class="day count-1"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-1"></td><td class="day count-2"></td><td class="day count-0"></td><td class="day count-2"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-1"></td></tr><tr><td class="dayName">Fri</td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-1"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-1"></td><td class="day count-1"></td><td class="day count-0"></td><td class="day count-1"></td><td class="day count-0"></td><td class="day count-1"></td><td class="day count-2"></td></tr><tr><td class="dayName">Sat</td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td><td class="day count-0"></td></tr></tbody></table><table><tbody><tr><td>Less</td><td class="day count-0"></td><td class="day count-1"></td><td class="day count-2"></td><td class="day count-3"></td><td class="day count-4"></td><td>More</td></tr></tbody></table></div>
+  <div id="app">
+    <table>
+      <tr>
+        <th v-for="month in months" class="month">{{month}}</th>
+      </tr>
+      <tr v-for="(days, name) in week">
+        <td class="dayName">{{daysOfWeek[name]}}</td>
+        <td v-for="day in days" class="day" :class="[`count-${day}`]"></td>
+      </tr>
+    </table>
+  
+    <table>
+      <tr>
+        <td>Less</td>
+        <td class="day count-0"></td>
+        <td class="day count-1"></td>
+        <td class="day count-2"></td>
+        <td class="day count-3"></td>
+        <td class="day count-4"></td>
+        <td>More</td>
+      </tr>
+    </table>
+  </div>
   
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  
+  <script>
+    const { createApp, ref } = Vue;
+    
+    async function getIncidents() {
+      const response = await fetch(
+        `https://www.githubstatus.com/api/v2/incidents.json`
+      );
+      const incidents = await response.json();
+      // console.log(incidents);
+      return incidents;
+    }
+    
+    async function run() {
+      const daysOfWeek = {
+        0: "",
+        1: "Mon",
+        2: "",
+        3: "Wed",
+        4: "",
+        5: "Fri",
+        6: ""
+      };
+    
+      const weekInMillis = 7 * 24 * 60 * 60 * 1000; // Number of milliseconds in a week
+      const present = new Date();
+      const monthNames = [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ];
+    
+      const months = new Array(52)
+        .fill(0)
+        .map((_, i) => new Date(present.getTime() - (52 - i) * weekInMillis))
+        .map((x) => (x.getDate() <= 7 ? monthNames[x.getMonth()] : ""));
+    
+      const allIncidents = await getIncidents();
+      // const allIncidents = {
+      //   incidents: [
+      //     {started_at: "2023-07-26T14:49:19.644Z"},
+      //     {started_at: "2023-07-28T09:31:01.989Z"},
+      //   ]
+      // };
+    
+      // console.log(allIncidents);
+      createApp({
+        setup() {
+          const incidentDates = allIncidents.incidents.map(
+            (i) => new Date(i.started_at)
+          );
+          // console.log(incidentDates);
+    
+          const week = Object.fromEntries(
+            Object.entries(daysOfWeek).map(([dayIndex, dayName]) => [
+              dayIndex,
+              incidentDates
+                .filter(
+                  (x) =>
+                    String(x.getDay()) === dayIndex &&
+                    x.getFullYear() >= present.getFullYear() - 1
+                )
+                .reduce((acc, date) => {
+                  const timeDifference = present - date;
+                  const weekNumber = Math.floor(timeDifference / weekInMillis);
+    
+                  if (weekNumber >= 0 && weekNumber < 52) {
+                    acc[52 - weekNumber - 1]++;
+                  }
+    
+                  return acc;
+                }, new Array(52).fill(0))
+            ])
+          );
+    
+          return {
+            week: week,
+            months: months,
+            daysOfWeek: daysOfWeek
+          };
+        }
+      }).mount("#app");
+    }
+    
+    run();
+  </script>
 </body></html>
