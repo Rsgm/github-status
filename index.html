@@ -56,18 +56,18 @@
       </tr>
       <tr v-for="(days, name) in week">
         <td class="dayName">{{daysOfWeek[name]}}</td>
-        <td v-for="day in days" class="day" :class="[`count-${day}`]"></td>
+        <td v-for="day in days" class="day" :class="[`count-${day}`]" :title="day"></td>
       </tr>
     </table>
   
     <table>
       <tr>
         <td>Less</td>
-        <td class="day count-0"></td>
-        <td class="day count-1"></td>
-        <td class="day count-2"></td>
-        <td class="day count-3"></td>
-        <td class="day count-4"></td>
+        <td class="day count-0" title="0"></td>
+        <td class="day count-1" title="1"></td>
+        <td class="day count-2" title="2"></td>
+        <td class="day count-3" title="3"></td>
+        <td class="day count-4" title="4+"></td>
         <td>More</td>
       </tr>
     </table>
